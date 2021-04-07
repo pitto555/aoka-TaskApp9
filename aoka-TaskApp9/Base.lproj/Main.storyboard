@@ -1,24 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aoka_TaskApp9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都道府県" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUy-CZ-owt">
+                                <rect key="frame" x="20" y="119" width="82" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4W-c8-pgF">
+                                <rect key="frame" x="363" y="119" width="31" height="30"/>
+                                <state key="normal" title="入力"/>
+                                <connections>
+                                    <segue destination="jzk-e9-mLS" kind="presentation" id="hum-ka-heO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未選択" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqY-AS-vwE">
+                                <rect key="frame" x="176.5" y="119" width="61.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K4W-c8-pgF" secondAttribute="trailing" constant="20" id="1eU-NP-qxZ"/>
+                            <constraint firstItem="iqY-AS-vwE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="HQ9-C5-oGY"/>
+                            <constraint firstItem="iqY-AS-vwE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LbV-1H-g00"/>
+                            <constraint firstItem="wUy-CZ-owt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="S9S-Si-XnO"/>
+                            <constraint firstItem="K4W-c8-pgF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="UXq-7K-TfS"/>
+                            <constraint firstItem="wUy-CZ-owt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="V3U-LS-5In"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="iqY-AS-vwE" id="7b9-Xe-txZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="18.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l1A-5h-Zdf">
+            <objects>
+                <viewController id="MQY-v7-9bf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x9g-Aq-3Fi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bF-wk-XAX">
+                                <rect key="frame" x="184" y="121" width="46" height="30"/>
+                                <state key="normal" title="東京都"/>
+                                <connections>
+                                    <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitTokyoWithSegue:" id="EKe-zC-AfQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWW-UQ-91Q">
+                                <rect key="frame" x="176" y="181" width="62" height="30"/>
+                                <state key="normal" title="神奈川県"/>
+                                <connections>
+                                    <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitKanagawaWithSegue:" id="Yni-nO-0TP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsM-Jz-qwf">
+                                <rect key="frame" x="184" y="241" width="46" height="30"/>
+                                <state key="normal" title="埼玉県"/>
+                                <connections>
+                                    <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitSaitamaWithSegue:" id="cuY-o8-atH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjj-B5-puC">
+                                <rect key="frame" x="184" y="301" width="46" height="30"/>
+                                <state key="normal" title="千葉県"/>
+                                <connections>
+                                    <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitTibaWithSegue:" id="Ckd-hk-aFV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SsK-ZB-AoY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LWW-UQ-91Q" firstAttribute="top" secondItem="6bF-wk-XAX" secondAttribute="bottom" constant="30" id="Kfe-rn-uY1"/>
+                            <constraint firstItem="GsM-Jz-qwf" firstAttribute="centerX" secondItem="x9g-Aq-3Fi" secondAttribute="centerX" id="X4f-eC-7eV"/>
+                            <constraint firstItem="6bF-wk-XAX" firstAttribute="top" secondItem="SsK-ZB-AoY" secondAttribute="top" constant="65" id="Ycc-sN-lUa"/>
+                            <constraint firstItem="LWW-UQ-91Q" firstAttribute="top" secondItem="6bF-wk-XAX" secondAttribute="bottom" constant="30" id="aq8-Yq-q4E"/>
+                            <constraint firstItem="LWW-UQ-91Q" firstAttribute="centerX" secondItem="x9g-Aq-3Fi" secondAttribute="centerX" id="edA-I8-OaX"/>
+                            <constraint firstItem="Zjj-B5-puC" firstAttribute="centerX" secondItem="x9g-Aq-3Fi" secondAttribute="centerX" id="gGp-X1-hwf"/>
+                            <constraint firstItem="GsM-Jz-qwf" firstAttribute="top" secondItem="LWW-UQ-91Q" secondAttribute="bottom" constant="30" id="lSg-tR-6AF"/>
+                            <constraint firstItem="Zjj-B5-puC" firstAttribute="top" secondItem="GsM-Jz-qwf" secondAttribute="bottom" constant="30" id="nWJ-aH-9LA"/>
+                            <constraint firstItem="GsM-Jz-qwf" firstAttribute="top" secondItem="LWW-UQ-91Q" secondAttribute="bottom" constant="30" id="nyE-Da-SsA"/>
+                            <constraint firstItem="Zjj-B5-puC" firstAttribute="top" secondItem="GsM-Jz-qwf" secondAttribute="bottom" constant="30" id="trK-HP-L0G"/>
+                            <constraint firstItem="6bF-wk-XAX" firstAttribute="centerX" secondItem="x9g-Aq-3Fi" secondAttribute="centerX" id="vTU-Jg-nI9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kUS-IO-RZR">
+                        <barButtonItem key="leftBarButtonItem" title="cancel" id="HfF-2Z-CTy">
+                            <connections>
+                                <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitCanselWithSegue:" id="RIE-pi-PiZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sak-zn-QsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KYU-Qn-dev" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="19"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9z4-MS-f8J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jzk-e9-mLS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6v5-Bn-h3R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MQY-v7-9bf" kind="relationship" relationship="rootViewController" id="RgL-4I-CRo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ3-kW-Pyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="19"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
