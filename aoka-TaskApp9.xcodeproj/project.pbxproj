@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830BD3D7261F481500ECB8EB /* nextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830BD3D6261F481500ECB8EB /* nextViewController.swift */; };
 		83390AFF261B003B00872CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83390AFE261B003B00872CB1 /* AppDelegate.swift */; };
 		83390B01261B003B00872CB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83390B00261B003B00872CB1 /* SceneDelegate.swift */; };
 		83390B03261B003B00872CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83390B02261B003B00872CB1 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		830BD3D6261F481500ECB8EB /* nextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nextViewController.swift; sourceTree = "<group>"; };
 		83390AFB261B003B00872CB1 /* aoka-TaskApp9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aoka-TaskApp9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83390AFE261B003B00872CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83390B00261B003B00872CB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				83390AFE261B003B00872CB1 /* AppDelegate.swift */,
 				83390B00261B003B00872CB1 /* SceneDelegate.swift */,
 				83390B02261B003B00872CB1 /* ViewController.swift */,
+				830BD3D6261F481500ECB8EB /* nextViewController.swift */,
 				83390B04261B003B00872CB1 /* Main.storyboard */,
 				83390B07261B003C00872CB1 /* Assets.xcassets */,
 				83390B09261B003C00872CB1 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83390B03261B003B00872CB1 /* ViewController.swift in Sources */,
+				830BD3D7261F481500ECB8EB /* nextViewController.swift in Sources */,
 				83390AFF261B003B00872CB1 /* AppDelegate.swift in Sources */,
 				83390B01261B003B00872CB1 /* SceneDelegate.swift in Sources */,
 			);

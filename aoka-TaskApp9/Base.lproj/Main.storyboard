@@ -26,7 +26,7 @@
                                 <rect key="frame" x="363" y="119" width="31" height="30"/>
                                 <state key="normal" title="入力"/>
                                 <connections>
-                                    <segue destination="jzk-e9-mLS" kind="presentation" id="hum-ka-heO"/>
+                                    <segue destination="QwG-vh-D6r" kind="presentation" id="gPB-Vn-J9M"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未選択" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqY-AS-vwE">
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="40.579710144927539" y="18.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="l1A-5h-Zdf">
             <objects>
-                <viewController id="MQY-v7-9bf" sceneMemberID="viewController">
+                <viewController id="MQY-v7-9bf" customClass="nextViewController" customModule="aoka_TaskApp9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x9g-Aq-3Fi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,28 +67,28 @@
                                 <rect key="frame" x="184" y="121" width="46" height="30"/>
                                 <state key="normal" title="東京都"/>
                                 <connections>
-                                    <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitTokyoWithSegue:" id="EKe-zC-AfQ"/>
+                                    <action selector="prefecturesButton:" destination="MQY-v7-9bf" eventType="touchUpInside" id="wp6-7j-SMU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWW-UQ-91Q">
                                 <rect key="frame" x="176" y="181" width="62" height="30"/>
                                 <state key="normal" title="神奈川県"/>
                                 <connections>
-                                    <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitKanagawaWithSegue:" id="Yni-nO-0TP"/>
+                                    <action selector="prefecturesButton:" destination="MQY-v7-9bf" eventType="touchUpInside" id="xHQ-gQ-bNt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsM-Jz-qwf">
                                 <rect key="frame" x="184" y="241" width="46" height="30"/>
                                 <state key="normal" title="埼玉県"/>
                                 <connections>
-                                    <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitSaitamaWithSegue:" id="cuY-o8-atH"/>
+                                    <action selector="prefecturesButton:" destination="MQY-v7-9bf" eventType="touchUpInside" id="Eia-6L-Kfb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjj-B5-puC">
                                 <rect key="frame" x="184" y="301" width="46" height="30"/>
                                 <state key="normal" title="千葉県"/>
                                 <connections>
-                                    <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitTibaWithSegue:" id="Ckd-hk-aFV"/>
+                                    <action selector="prefecturesButton:" destination="MQY-v7-9bf" eventType="touchUpInside" id="vtU-J7-tjM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -111,33 +111,36 @@
                     <navigationItem key="navigationItem" id="kUS-IO-RZR">
                         <barButtonItem key="leftBarButtonItem" title="cancel" id="HfF-2Z-CTy">
                             <connections>
-                                <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitCanselWithSegue:" id="RIE-pi-PiZ"/>
+                                <segue destination="KYU-Qn-dev" kind="unwind" unwindAction="exitCancelWithSegue:" id="62K-zb-b7A"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="KYU-Qn-dev" kind="unwind" identifier="segue" unwindAction="exitDoneWithSegue:" id="H1O-ba-aNx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sak-zn-QsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="KYU-Qn-dev" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1735" y="19"/>
+            <point key="canvasLocation" x="1723.1884057971015" y="18.75"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="9z4-MS-f8J">
+        <scene sceneID="8gD-84-IHD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jzk-e9-mLS" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QwG-vh-D6r" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6v5-Bn-h3R">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ehe-lx-kMY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="MQY-v7-9bf" kind="relationship" relationship="rootViewController" id="RgL-4I-CRo"/>
+                        <segue destination="MQY-v7-9bf" kind="relationship" relationship="rootViewController" id="xpJ-8h-clL"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ3-kW-Pyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6I-Ix-eWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842" y="19"/>
+            <point key="canvasLocation" x="813.04347826086962" y="18.75"/>
         </scene>
     </scenes>
     <resources>
