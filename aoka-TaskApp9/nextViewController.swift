@@ -11,19 +11,28 @@ class nextViewController: UIViewController{
     
     var prefecture:String?
     
-    @IBAction func prefecturesButton(_ sender: UIButton) {
-        switch sender.tag {
-        case 0:
-            prefecture = "東京都"
-        case 1:
-            prefecture = "神奈川県"
-        case 2:
-            prefecture = "埼玉県"
-        case 3:
-            prefecture = "千葉県"
-        default:
-            return
-        }
+  
+   
+    @IBAction func tokyo(_ sender: Any) {
+        prefecture = "東京都"
         performSegue(withIdentifier: "segue", sender: nil)
     }
+    
+    @IBAction func kanagawa(_ sender: Any) {
+        prefecture = "神奈川県"
+        performSegue(withIdentifier: "segue", sender: nil)
+    }
+    
+    
+    @IBAction func saitama(_ sender: Any) {
+        prefecture = "埼玉県"
+        performSegue(withIdentifier: "segue", sender: nil)
+    }
+    
+    
+    @IBAction func chiba(_ sender: Any) {
+        prefecture = "千葉県"
+        performSegue(withIdentifier: "segue", sender: nil)
+    }
+    
 }

@@ -67,28 +67,28 @@
                                 <rect key="frame" x="184" y="121" width="46" height="30"/>
                                 <state key="normal" title="東京都"/>
                                 <connections>
-                                    <action selector="prefecturesButton:" destination="MQY-v7-9bf" eventType="touchUpInside" id="wp6-7j-SMU"/>
+                                    <action selector="tokyo:" destination="MQY-v7-9bf" eventType="touchUpInside" id="cIQ-iu-lHc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWW-UQ-91Q">
                                 <rect key="frame" x="176" y="181" width="62" height="30"/>
                                 <state key="normal" title="神奈川県"/>
                                 <connections>
-                                    <action selector="prefecturesButton:" destination="MQY-v7-9bf" eventType="touchUpInside" id="xHQ-gQ-bNt"/>
+                                    <action selector="kanagawa:" destination="MQY-v7-9bf" eventType="touchUpInside" id="Pdy-cT-exh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsM-Jz-qwf">
                                 <rect key="frame" x="184" y="241" width="46" height="30"/>
                                 <state key="normal" title="埼玉県"/>
                                 <connections>
-                                    <action selector="prefecturesButton:" destination="MQY-v7-9bf" eventType="touchUpInside" id="Eia-6L-Kfb"/>
+                                    <action selector="saitama:" destination="MQY-v7-9bf" eventType="touchUpInside" id="ebb-AV-Zv9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjj-B5-puC">
                                 <rect key="frame" x="184" y="301" width="46" height="30"/>
                                 <state key="normal" title="千葉県"/>
                                 <connections>
-                                    <action selector="prefecturesButton:" destination="MQY-v7-9bf" eventType="touchUpInside" id="vtU-J7-tjM"/>
+                                    <action selector="chiba:" destination="MQY-v7-9bf" eventType="touchUpInside" id="jv3-F8-rs5"/>
                                 </connections>
                             </button>
                         </subviews>
